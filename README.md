@@ -1,4 +1,4 @@
-# XRoboToolkit-Teleop-Sample-Python
+# XenseRobo-Teleop-Python
 
 Pico teleoperation demo written in python for both mujoco simulation and robot hardware.
 
