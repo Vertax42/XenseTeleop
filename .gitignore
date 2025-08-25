@@ -87,7 +87,6 @@ tmp/
 
 # Robot specific
 *.bag
-*.urdf
 *.sdf
 *.world
 *.launch

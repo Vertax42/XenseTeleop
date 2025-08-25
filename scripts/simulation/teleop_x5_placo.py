@@ -9,7 +9,7 @@ from xrobotoolkit_teleop.utils.path_utils import ASSET_PATH
 
 
 def main(
-    robot_urdf_path: str = os.path.join(ASSET_PATH, "arx/X5/dual_X5A_EE.urdf"),
+    robot_urdf_path: str = os.path.join(ASSET_PATH, "arx/X5/dual_X5A.urdf"),
     scale_factor: float = 1.5,
 ):
     """
@@ -26,11 +26,14 @@ def main(
                 "gripper_trigger": "right_trigger",
                 "joint_names": [
                     "right_joint7",
+                    "right_joint8",
                 ],
                 "open_pos": [
                     0.044,
+                    0.044,
                 ],
                 "close_pos": [
+                    0.0,
                     0.0,
                 ],
             },
@@ -45,11 +48,14 @@ def main(
                 "gripper_trigger": "left_trigger",
                 "joint_names": [
                     "left_joint7",
+                    "left_joint8",
                 ],
                 "open_pos": [
                     0.044,
+                    0.044,
                 ],
                 "close_pos": [
+                    0.0,
                     0.0,
                 ],
             },

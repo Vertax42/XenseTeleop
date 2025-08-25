@@ -1,4 +1,6 @@
 import os
 
 PACKAGE_PATH = os.path.dirname(os.path.abspath(__file__))
-ASSET_PATH = os.path.join(PACKAGE_PATH, "../../assets")
+# Get the workspace root directory (XenseTeleop)
+WORKSPACE_ROOT = os.path.dirname(os.path.dirname(PACKAGE_PATH))
+ASSET_PATH = os.path.join(WORKSPACE_ROOT, "assets")
