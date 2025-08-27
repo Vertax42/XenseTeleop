@@ -46,9 +46,9 @@ echo "Operating system check passed: $OS_NAME $OS_VERSION"
 
     cd ../../../..
 
-    pip install -e . || { echo "Failed to install xrobotoolkit_teleop with pip"; exit 1; }
+    pip install -e . || { echo "Failed to install xenseteleop_toolkit with pip"; exit 1; }
 
 
     echo -e "\n"
-    echo -e "[INFO] xrobotoolkit_teleop is installed in conda environment '$ENV_NAME'.\n"
+    echo -e "[INFO] xenseteleop_toolkit is installed in conda environment '$ENV_NAME'.\n"
     echo -e "\n"

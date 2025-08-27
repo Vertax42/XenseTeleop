@@ -1,10 +1,10 @@
 import os
 
 import tyro
-from xrobotoolkit_teleop.simulation.mujoco_teleop_controller import (
+from xenseteleop_toolkit.simulation.mujoco_teleop_controller import (
     MujocoTeleopController,
 )
-from xrobotoolkit_teleop.utils.path_utils import ASSET_PATH
+from xenseteleop_toolkit.utils.path_utils import ASSET_PATH
 
 
 def main(

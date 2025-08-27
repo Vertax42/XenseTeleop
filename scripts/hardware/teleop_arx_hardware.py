@@ -1,5 +1,5 @@
 import tyro
-from xrobotoolkit_teleop.hardware.arx_r5_teleop_controller import (
+from xenseteleop_toolkit.hardware.arx_r5_teleop_controller import (
     DEFAULT_ARX_R5_MANIPULATOR_CONFIG,
     DEFAULT_ARX_R5_URDF_PATH,
     ARXR5TeleopController,

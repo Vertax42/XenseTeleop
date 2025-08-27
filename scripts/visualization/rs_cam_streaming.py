@@ -2,7 +2,7 @@
 import cv2
 import numpy as np
 
-from xrobotoolkit_teleop.hardware.interface.realsense import (
+from xenseteleop_toolkit.hardware.interface.realsense import (
     RealSenseCameraInterface,
     get_supported_resolutions,
 )

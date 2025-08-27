@@ -3,14 +3,14 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "xrobotoolkit_teleop"
+name = "xenseteleop_toolkit"
 version = "1.0.3"
-description = "Teleoperation demo with MuJoCo and UR5 robot"
+description = "Teleoperation demo with MuJoCo and ARX X5 robot"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [
-    {name = "Zhigen", email = "zhaozhigen@gmail.com"}
+    {name = "Vertax42", email = "yaphetys@gmail.com"}
 ]
 dependencies = [
     "mujoco",
@@ -33,10 +33,10 @@ dev = [
 ]
 
 [tool.setuptools]
-packages = ["xrobotoolkit_teleop"]
+packages = ["xenseteleop_toolkit"]
 
 [tool.setuptools.package-data]
-xrobotoolkit_teleop = ["../assets/**/*"]
+xenseteleop_toolkit = ["../assets/**/*"]
 
 [tool.black]
 line-length = 120

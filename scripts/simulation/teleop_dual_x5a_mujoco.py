@@ -1,24 +1,24 @@
 import os
 
 import tyro
-from xrobotoolkit_teleop.simulation.mujoco_teleop_controller import (
+from xenseteleop_toolkit.simulation.mujoco_teleop_controller import (
     MujocoTeleopController,
 )
-from xrobotoolkit_teleop.utils.path_utils import ASSET_PATH
+from xenseteleop_toolkit.utils.path_utils import ASSET_PATH
 
 
 def main(
-    xml_path: str = os.path.join(ASSET_PATH, "galaxea/A1X/scene.xml"),
-    robot_urdf_path: str = os.path.join(ASSET_PATH, "galaxea/A1X/dual_a1x_fixed_gripper.urdf"),
+    xml_path: str = os.path.join(ASSET_PATH, "arx/X5/scene.xml"),
+    robot_urdf_path: str = os.path.join(ASSET_PATH, "arx/X5/dual_X5A_fixed.urdf"),
     scale_factor: float = 1.5,
     visualize_placo: bool = True,
 ):
     """
-    Main function to run the dual A1X teleoperation in MuJoCo.
+    Main function to run the dual X5A teleoperation in MuJoCo.
     """
     config = {
         "right_hand": {
-            "link_name": "right_arm_link6",
+            "link_name": "right_link6",
             "pose_source": "right_controller",
             "control_trigger": "right_grip",
             "vis_target": "right_target",
@@ -26,7 +26,7 @@ def main(
                 "type": "parallel",
                 "gripper_trigger": "right_trigger",
                 "joint_names": [
-                    "right_gripper_finger_joint1",
+                    "right_joint7",
                 ],
                 "open_pos": [
                     0.05,
@@ -37,7 +37,7 @@ def main(
             },
         },
         "left_hand": {
-            "link_name": "left_arm_link6",
+            "link_name": "left_link6",
             "pose_source": "left_controller",
             "control_trigger": "left_grip",
             "vis_target": "left_target",
@@ -45,7 +45,7 @@ def main(
                 "type": "parallel",
                 "gripper_trigger": "left_trigger",
                 "joint_names": [
-                    "left_gripper_finger_joint1",
+                    "left_joint7",
                 ],
                 "open_pos": [
                     0.05,
